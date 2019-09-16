@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:screenOrientation="sensor"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/party" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="280dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@layout/border"
+        android:hint=" Enter that email id" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:background="@layout/border"
+        android:onClick="buttonlistener"
+        android:text="Send"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/outline"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/wish_sms"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/wish_sms"
+            android:layout_marginTop="19dp"
+            android:background="@layout/border" />
+
+        <ImageButton
+            android:id="@+id/select"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/outline2"
+            android:onClick="select_contact"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+        />
+
+        <ImageButton
+            android:id="@+id/wish_sms"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:background="@drawable/outline2"
+            android:onClick="instant"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+        />
+
+        <ImageButton
+            android:id="@+id/wish_phone"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/wish_sms"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_toEndOf="@+id/wish_sms"
+            android:layout_toRightOf="@+id/wish_sms"
+            android:background="@drawable/outline2"
+            android:onClick="instant"
+            app:srcCompat="@android:drawable/ic_menu_call" />
+        />
+
+        <ImageButton
+            android:id="@+id/wish_social"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/wish_phone"
+            android:layout_marginEnd="38dp"
+            android:layout_marginRight="38dp"
+            android:background="@drawable/outline2"
+            android:onClick="instant"
+            app:srcCompat="@android:drawable/ic_menu_share" />
+        />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/addmember"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:onClick="addmember"
+        android:background="@layout/border"
+        android:text="Add Member"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/syncloc"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:onClick="synclocation"
+        android:background="@layout/border"
+        android:text="sync location"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/login"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:onClick="register1"
+        android:text="Register"
+        android:textSize="20dp"
+        android:background="@drawable/outline2"/>
+   <RelativeLayout
+    android:layout_width="350dp"
+    android:layout_height="400dp"
+    android:background="@drawable/outline"
+       android:layout_marginLeft="30dp"
+       android:layout_marginTop="30dp">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="135dp"
+           android:text="Join us..."
+           android:textColor="@android:color/white"
+           android:textSize="35dp"
+           android:layout_marginLeft="100dp"
+           android:layout_marginTop="25dp" />
+       <EditText
+        android:id="@+id/username"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="40dp"
+        android:hint="Username"
+        android:textColorHint="@android:color/white"/>
+    <View
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:background="@android:color/white"
+        android:layout_below="@+id/username"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/username"
+        android:textColorHint="@android:color/white"
+        android:hint="Password" />
+    <View
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:background="@android:color/white"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="40dp"/>
+
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="25dp"
+        android:hint="Date (YYYY-mm-dd)"
+        android:textColorHint="@android:color/white"/>
+    <View
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:background="@android:color/white"
+        android:layout_below="@+id/date"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/emailID"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Email-ID"
+        android:textColorHint="@android:color/white"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="25dp"/>
+       <View
+           android:layout_width="250dp"
+           android:layout_height="2dp"
+           android:background="@android:color/white"
+           android:layout_below="@+id/emailID"
+           android:layout_marginLeft="40dp"/>
+
+   </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/login"
+    android:scaleType="centerCrop" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:text="Let us know you..."
+        android:textColor="@android:color/white"
+        android:textSize="35dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="70dp" />
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:background="@drawable/outline"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USERNAME : "
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:typeface="sans"/>
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:hint="Username"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/white"
+            android:ems="60"
+            android:background="@null"
+            android:textColorHint="@android:color/darker_gray"
+           />
+        <View
+            android:layout_width="280dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edit1"
+            android:background="@android:color/white"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD : "
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="135dp"
+            android:textStyle="bold"
+            android:typeface="sans"/>
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:hint="Password"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="155dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/white"
+            android:ems="60"
+            android:background="@null"
+            android:textColorHint="@android:color/darker_gray"
+            />
+        <View
+            android:layout_width="280dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/edit2"
+            android:background="@android:color/white"
+            android:layout_marginLeft="30dp"/>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="Log in"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/outline2"
+        android:onClick="login1"
+        android:layout_marginLeft="60dp"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:text="register"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/outline2"
+        android:layout_marginLeft="230dp"
+        android:onClick="register2"
+        android:textSize="20dp"/>
+</RelativeLayout>

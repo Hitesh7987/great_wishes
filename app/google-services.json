@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "722713899983",
+    "firebase_url": "https://greatwishes-b068e.firebaseio.com",
+    "project_id": "greatwishes-b068e",
+    "storage_bucket": "greatwishes-b068e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722713899983:android:ab11d84bdbc9f340",
+        "android_client_info": {
+          "package_name": "com.example.honey.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "722713899983-3ver4csd6fmvm9i2necjn2ul4cr1ldrd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.honey.myapplication",
+            "certificate_hash": "326a61c81e254beb29b2b5de518febb48a7aa23f"
+          }
+        },
+        {
+          "client_id": "722713899983-k664nd10865q9g5csvc6ck58crplco1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZHLiFAupFQLL4tf4Nso-mhKj5ua-BRWk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "722713899983-k664nd10865q9g5csvc6ck58crplco1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
